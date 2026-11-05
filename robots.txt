@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /ressurser/
+
+Sitemap: https://www.ninamerete.no/sitemap.xml
