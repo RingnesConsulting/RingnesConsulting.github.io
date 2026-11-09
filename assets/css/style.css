@@ -106,7 +106,8 @@ p { margin: 0 0 1em; }
 .brand img { width: 132px; height: auto; }
 .nav { display: flex; align-items: center; gap: clamp(20px, 2.6vw, 36px); }
 .nav a:not(.btn) { font-size: .98rem; font-weight: 500; color: var(--ink); text-decoration: none; padding: 6px 0; }
-.nav a:not(.btn):hover, .nav a[aria-current="page"] { color: var(--green); }
+.nav a:not(.btn):hover, .nav a:not(.btn)[aria-current="page"] { color: var(--green); }
+.nav .btn[aria-current="page"] { background: var(--green-deep); border-color: var(--green-deep); color: #fff; }
 .nav a:not(.btn)[aria-current="page"] { box-shadow: inset 0 -1.5px 0 var(--accent); }
 .nav-toggle { display: none; }
 
